@@ -1,0 +1,20 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://source.unsplash.com/user/c_v_r") center no-repeat;
+}
+.button {
+  padding: 18px 32px;
+  border: solid 2px black;
+  background: transparent;
+  color: black;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.button:hover {
+  background: #000;
+  color: white;
+}
