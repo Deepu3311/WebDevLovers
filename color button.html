@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: rgb(131,58,180);
+background: linear-gradient(262deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.6615021008403361) 50%, rgba(252,176,69,1) 100%);
+		}
+		.container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width: 100vw;
+			flex-direction: column;
+		}
+
+		.container h2{
+			font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+		}
+
+         .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+	</style>
+</head>
+<body>
+	<div class="container">
+			<h2>Hello There</h2>
+			<button class="btn-grad">Click Me</button>
+	</div>
+</body>
+</html>
