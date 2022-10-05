@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: cyan;
+  color: black;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  height: 100vh;
+  background: url(background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  box-shadow: 1px 1px 15px black;
+  background: linear-gradient(9deg, rgb(38, 38, 38), rgb(0, 0, 0));
+  width: 31em;
+  height: 31em;
+  animation: shadow_color_changes 20s 0s infinite;
+  border-radius: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+
+  /* animation-name: opp-spinner;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear; */
+}
+.box img {
+  border-radius: 100%;
+  width: 15em;
+  border: 1em rgba(30, 29, 29, 0.72) solid;
+  box-shadow: 1px 1px 15px black;
+  animation-name: spinner;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+.box .text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em 0em;
+  margin: 2em 0em;
+}
+.box h1 {
+  flex: 1;
+  color: rgb(214, 214, 214);
+  text-shadow: 1px 1px 15px black;
+  font-size: 2em;
+  margin: 0.3em 0em;
+}
+.box h3 {
+  color: rgb(214, 214, 214);
+  opacity: 0.5;
+}
+
+.box:hover {
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: 0.3s ease-in-out;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: cyan;
+  opacity: 0.7;
+}
+.attribution a:hover {
+  opacity: 1;
+}
+
+@keyframes shadow_color_changes {
+  0% {
+    box-shadow: 0px 0px 40px rgb(0, 255, 255);
+  }
+  25% {
+    box-shadow: 0px 0px 40px rgb(238, 255, 0);
+  }
+
+  50% {
+    box-shadow: 0px 0px 40px rgb(255, 0, 247);
+  }
+
+  75% {
+    box-shadow: 0px 0px 40px rgb(255, 140, 0);
+  }
+
+  100% {
+    box-shadow: 0px 0px 40px rgb(0, 255, 255);
+  }
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes opp-spinner {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
