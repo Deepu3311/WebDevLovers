@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            font-size: 150px;
+            margin-left: 23%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digital Clock</h1>
+    <div id="clock">
+        <script>
+            function showDate() {
+                let t;
+                let date = new Date();
+                let d = date.getDay();
+                let h = date.getHours();
+                let m = date.getMinutes();
+                let s = date.getSeconds();
+                if (s < 10) {
+                    s = "0" + s;
+                }
+                if (m < 10) {
+                    m = "0" + m;
+                }
+                if (h <= 12) {
+                    h = h;
+                    t="AM";
+                }
+                else if (h >= 12) {
+                    t = h - 12;
+                    t = "PM";
+                }
+                else{
+                    h = "0";
+                }
+                setTimeout(showDate, 1000);
+                document.getElementById("clock").innerHTML = h + " : " + m + " : " + s + " " + t;
+                console.log(Date());
+            }
+            showDate();
+            document.getElementById("clock").style.border = "10px solid white";
+            document.getElementById("clock").style.fontSize = "230px";
+            document.getElementById("clock").style.color = "white";
+            document.getElementById("clock").style.padding = "20px";
+        </script>
+    </div>
+</body>
+</html>
