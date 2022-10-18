@@ -1,0 +1,58 @@
+body{
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://i0.wp.com/files.tripstodiscover.com/files/2018/09/bigstock-168305774.jpg?resize=959%2c719);
+    justify-content: center;
+  font-family: sans-serif;
+background-size: cover;
+overflow: hidden;
+}
+h2{
+
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 34px;
+    text-align: center;
+    
+}
+.clock
+{
+
+    display: flex;
+}
+.clock div{
+    margin: 5px;
+}
+.clock span{
+    width: 100px;
+    height: 80px;
+    background-color: slateblue;
+    opacity: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: darkblue;
+    opacity: 80%;
+}
+.clock #ampm{
+    
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: green;
+ 
+}
