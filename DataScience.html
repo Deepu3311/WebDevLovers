@@ -1,0 +1,253 @@
+//FIND WORKING AT - http://global-solutions.me/data-science/
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>DATA SCIENCE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            background-image: url(data:image/jpeg;base64,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);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQ5UKNvqLDSuc_yKiecr-lXsqKleSyL49eeD0ywYsU6Elo8SvMcpNvNV_kWKn9Wsg9p0&usqp=CAU"
+                    alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+                Future Foundation
+            </a>
+        </div>
+    </nav>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true"><span
+                    class="material-icons md-36">home</span>Home</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><span
+                    class="material-icons md-36">
+                    miscellaneous_services
+                </span>Services</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><span
+                    class="material-icons md-36">contact_support</span>Contact</button>
+        </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <h2>Specialisation</h2>
+            <ul>
+                <li>TECH STARTUPS</li>
+                <li>DATA ANALYTICS,AL,ML</li>
+                <li>IOT CLOUD BIG DATA</li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <h2>Services</h2>
+            <li>STARTUP SUPPORT PROGRAM</li>
+            <li>CAMPUS CONNENT PROGRAM</li>
+            <li>FRONT LINE HIRING TEAM</li>
+            <li>EXECUTIVE HIRING TEAM</li>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <h2>Connect Us</h2>
+            <ul>
+                <li>Email-: gauratva.co.in</li>
+                <li>Phone:- 0000-000000</li>
+                <li>Meet in Office:- Near East India, Central Pillar</li>
+            </ul>
+        </div>
+    </div>
+    <iframe width="280" height="200" src="https://www.youtube.com/embed/oMBE2TeH2no" title="YouTube video player"
+        frameborder="2"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col">
+                <div class="h-1 bg-gray-200 rounded overflow-hidden">
+                    <div class="w-24 h-full bg-indigo-500"></div>
+                </div>
+            </div>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full"
+                            src="https://storage.ning.com/topology/rest/1.0/file/get/9501415673?profile=RESIZE_710x">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Acceleration of the Move to the
+                        Cloud - What’s Next for Data Strategy?</h2>
+                    <p class="text-base leading-relaxed mt-2">The migration to the cloud has accelerated considerably
+                        since the start of the COVID-19 pandemic. Analysts at IDC predicted that by the end of 2021, 80%
+                        of enterprises will have moved from on-premise data centers to</p>
+                    <a class="text-indigo-500 inline-flex items-center mt-3"
+                        href="https://www.datasciencecentral.com/profiles/blogs/the-acceleration-of-the-move-to-the-cloud-what-s-next-for-data">Read
+                        More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full"
+                            src="https://storage.ning.com/topology/rest/1.0/file/get/9501475476?profile=RESIZE_710x">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">How Big Data Makes Digital Marketing
+                        Campaigns More Efficient</h2>
+                    <p class="text-base leading-relaxed mt-2">Data has gained relevance in almost every sphere of business activity. In this article, we will discuss the key aspects of how data influences the digital marketing space.
+
+                        You perhaps have not yet realized that data bears the capability</p>
+                    <a class="text-indigo-500 inline-flex items-center mt-3"
+                        href="https://www.datasciencecentral.com/profiles/blogs/how-big-data-makes-digital-marketing-campaigns-more-efficient-2">Read
+                        More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full"
+                            src="https://storage.ning.com/topology/rest/1.0/file/get/9501525285?profile=RESIZE_710x">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">What is the most robust
+                        binary-classification performance metric?</h2>
+                    <p class="text-base leading-relaxed mt-2">Accuracy, F1, or TPR (a.k.a recall or sensitivity) are
+                        well-known and widely used metrics for evaluating and comparing the performance of machine
+                        learning based classification. But, are we sure we evaluate classifiers' performance correctly?</p>
+                    <a class="text-indigo-500 inline-flex items-center mt-3"
+                        href="https://www.datasciencecentral.com/profiles/blogs/which-is-the-most-robust-binary-classification-performance-metric">Read
+                        More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full"
+                            src="https://storage.ning.com/topology/rest/1.0/file/get/9489185895?profile=RESIZE_710x">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">About Deep learning as subset of
+                        machine learning and AI</h2>
+                    <p class="text-base leading-relaxed mt-2">Deep learning has wide application in artificial
+                        intelligence and computer vision backed programs. Across the world, machine learning has added
+                        more value to a range of tasks using key methodologies of artificial intelligence such as
+                        natural language processing, artificial neural </p>
+                    <a class="text-indigo-500 inline-flex items-center mt-3"
+                        href="https://www.datasciencecentral.com/profiles/blogs/text-annotations-in-the-news-industry-2">Read
+                        More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full"
+                            src="https://storage.ning.com/topology/rest/1.0/file/get/9488829665?profile=RESIZE_710x">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">How Data Science and BI Is
+                        Revolutionizing the Sports Industry with Power BI</h2>
+                    <p class="text-base leading-relaxed mt-2">Nowadays, data has become very important in all
+                        industries, and that is why thousands of companies hailing from multiple sectors are resorting
+                        to data analytics tools. Using BI and data analysis tools can prove to be helpful for <a class="text-indigo-500 inline-flex items-center mt-3" href=>Read More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                </div>
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full"
+                            src="https://storage.ning.com/topology/rest/1.0/file/get/9479547500?profile=RESIZE_710x">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">What Does the Future of Machine
+                        Learning Look Like?</h2>
+                    <p class="text-base leading-relaxed mt-2">With machine learning now being behind many technologies,
+                        from Netflix’s recommendation algorithm to self-driving cars, it’s time for businesses to start
+                        taking a closer look. In this article, we will discuss the future of machine learning and its
+                        value throughout industries.</p>
+                    <a class="text-indigo-500 inline-flex items-center mt-3"
+                        href="https://www.datasciencecentral.com/profiles/blogs/what-does-the-future-of-machine-learning-look-like">Read
+                        More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full"
+                            src="https://multimedia.getresponse360.com/datascience-B/photos/ca2e7eba-015c-4853-b216-e66cb2d8165b.jpg">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Emerging Technologies Event Horizon</h2>
+                    <p class="text-base leading-relaxed mt-2">It's Gartner Hype Cycle Day! This is roughly analogous to the Oscars for emerging technologies, in which the Gartner Group looks through their telescopes to see what could end up being the next big thing over the course of the next decade. The idea behind the hype cycle is an intriguing concept - emerging technologies seem to come out of nowhere, explode into prominence</p>
+                    <a class="text-indigo-500 inline-flex items-center mt-3" href="https://www.datasciencecentral.com/profiles/blogs/dsc-weekly-digest-24-august-2021">Read More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full"
+                            src="https://storage.ning.com/topology/rest/1.0/file/get/9488812467?profile=RESIZE_710x">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Improving Shipment and Orders: Defense Visual Streams Logistics</h2>
+                    <p class="text-base leading-relaxed mt-2">Defense logistics (DL) is a significant and mostly untapped knowledge area in the field of Production Engineering, despite its importance. As a result, this article aims to define the domain of the DL issue. The emphasis is on industrial, technical, institutional, organizational, and, in particular, strategic management elements of logistics in the</p>
+                    <a class="text-indigo-500 inline-flex items-center mt-3" href="https://www.datasciencecentral.com/profiles/blogs/real-possibilities-of-improving-shipment-and-orders-defence">Read More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full"
+                            src="https://storage.ning.com/topology/rest/1.0/file/get/9499907252?profile=RESIZE_710x">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">New Study Warns: Get ready for the next pandemic</h2>
+                    <p class="text-base leading-relaxed mt-2">For much of the past century, the fear has been that a calamity like an asteroid strike, supernova blast, or environmental change would wipe out humanity. But new research, published by Duke Global Health Institute, is pointing to a much different demise for humans. The study, called Intensity and frequency of extreme novel epidemics and published in </p>
+                    <a class="text-indigo-500 inline-flex items-center mt-3"
+                        href="https://www.datasciencecentral.com/profiles/blogs/get-ready-for-the-next-pandemic">Read More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p align="center"><span class="material-icons md-50">copyright</span>Created by Bhawana. All rights
+            reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
