@@ -1,7 +1,7 @@
 # Hacktoberfest
 
 [![Contribution Open](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ows-ali/Hacktoberfest/blob/master/CONTRIBUTING.md)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ows-ali/Hacktoberfest/issues)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103?style=flat)](https://github.com/ows-ali/Hacktoberfest/issues)
 
 This repository is mainly open to those who are looking to make some PR for the Hacktoberfest event, and to get started with GitHub and the open-source world.
 In this repository, you can find the solutions (as source code) for the problems in [HackerRank](https://hackerrank.com), [Codechef](https://codechef.com) or any other online platform
