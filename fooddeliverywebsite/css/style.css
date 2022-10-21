@@ -1,0 +1,212 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+    
+     /* navigation bar logo and image */
+     #logo img{
+        height: 64px;
+        width: 64px;
+        margin: 10px;
+    }
+
+    .navbar{
+        display: flex;
+        position: sticky;
+        top: 0px;
+    }
+    
+    .navbar::before{
+        content:"";
+        background-color: silver;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    .navbar ul{
+         display: flex;
+         font-family: 'Ballet', cursive;
+     }
+     .navbar ul li{
+         font-size: 1.3rem;
+        align-items: center;
+        margin: 20px 13px;
+       list-style:none;
+     }
+     .navbar ul li a{
+         display: block;
+         padding: 3px 22px;
+         border-radius: 20px;
+         text-decoration: none;
+     }  
+
+     .navbar ul li a:hover{
+         background-color: white; 
+         color: black;        
+     }
+     
+     /* home section */
+     #home{
+         display:flex;
+         flex-direction: column;
+         height: 500px;
+         padding: 3px 200px;
+         justify-content: center;
+         align-items: center;
+     }
+    
+     #home::before{
+        content:"";
+        background: url('../img/bg2.jpeg') no-repeat center center/cover; /*../ to come out of current folder*/
+        position: absolute;
+        height: 506px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;         
+     }
+
+     #home h1{
+         color:black;
+         text-align: center;
+         font-size: 2.1rem;
+         font-family: 'Playball', cursive;
+     }
+     #home p{
+        color:black;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Playball', cursive;
+        margin-bottom: 20px;
+    }
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid black;
+        background-color: lightsalmon;
+        margin: 17px;
+        font-size: 1.0rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: white; 
+        color: black;        
+    }
+
+    /* services section*/
+    #services{
+        margin:20px;
+        display:flex;
+    }
+    .box{
+        border: 2px solid brown;
+        background-color: rgb(192, 187, 187);
+        border-radius: 24px;
+        padding: 5px;
+        margin: 3px;
+        font-family: 'Baloo Tamma 2', cursive;
+    }
+    .box img{
+        height: 150px;
+        display: block; 
+        margin: auto;
+        border-radius: 25px;
+    }
+
+    /* clients section  */
+    .client-section{
+        position: relative;
+        }
+    
+    #client-section::before{
+        content:"";
+        background: url('../img/bg1.jpg') no-repeat center center/cover; /*../ to come out of current folder*/
+        position: absolute;
+        height:250px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .client-item img{
+        padding: 3px;
+    }
+    
+    #clients img{
+        height: 144px;
+    }
+
+    /* contact section  */
+    #contact{
+        position: relative;
+    }
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        padding: 2px;
+        background: url('../img/contact.jpeg') no-repeat center center/cover;
+        }
+        .contact-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+        .contact-box form{
+            width: 40%;
+        }
+        .contact-box label{
+            font-size: 1.3rem;
+            font-family: 'Baloo Tamma 2', cursive;
+
+        }
+        .contact-box input, 
+        .contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 0.8rem;
+        } 
+
+
+
+        footer{
+            background: black;
+            color: white;
+            padding: 9px 5px;
+        }
+
+     /*utility class*/
+     .h-primary{
+         text-align: center;
+         position: center;
+         font-size: 3rem;
+         padding: 15px;
+         font-family: 'Baloo Tamma 2', cursive;
+     }
+
+     .h-secondary{
+        font-size: 2rem;
+        padding: 15px;
+        font-family: 'Playball', cursive;
+    }
+
+     .center{
+         text-align: center;
+     }
+
+    
