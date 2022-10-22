@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,400&family=Poppins:wght@200;400&family=Source+Serif+4&family=Supermercado+One&family=Titillium+Web&display=swap"
+    rel="stylesheet" />
+  <title>Chevrolet</title>
+  <link rel="stylesheet" type="text/css" href="camaro.css" />
+</head>
+
+<body>
+  <div id="container">
+    <nav id="navbar">
+      <ul>
+        <div class="nav-icons">
+          <li>
+            <a href="#"><span class="material-icons"> density_medium </span></a>
+          </li>
+          <li>
+            <a id="separater" href="#"><span class="material-icons"> search </span></a>
+          </li>
+        </div>
+        <div class="nav-items">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">MODELS</a></li>
+          <li><a href="#">INNOVATION</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><img src="./chevrolet-icon.png" id="logo" /></li>
+        </div>
+      </ul>
+      <button class="menu-btn" data-menu-btn>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" class="menu-icon">
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+      </button>
+      <div class="navlist-container" data-navlist>
+        <button class="close-btn" data-close-btn>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" class="close-icon">
+            <g fill="#D0D6F9" fill-rule="evenodd">
+              <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+              <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+            </g>
+          </svg>
+        </button>
+        <ul class="mobile-nav-items">
+          <li class="navlist">
+            <a class="navlink" href="#">HOME</a>
+          </li>
+          <li class="navlist">
+            <a class="navlink" href="#">MODELS</a>
+          </li>
+          <li class="navlist">
+            <a class="navlink" href="#">INNOVATION</a>
+          </li>
+          <li class="navlist">
+            <a class="navlink" href="#">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="car-details">
+        <div class="chevrolet-text">
+          <h1 id="main">CHEVROLET</h1>
+          <h3 id="sub">CAMARO</h3>
+
+          <p id="text">
+            Lorem ipsum dolor bibendum lorem Aenean turpis lorem. Lorem ipsum
+            dolor bibendum lorem Aenean turpis lorem
+          </p>
+          <button id="button">READ MORE</button>
+        </div>
+        <div class="car-container">
+          <img id="car-img" src="./car2.png" />
+        </div>
+      </div>
+
+      <div class="car-specs">
+        <div id="top-row">
+          <p>POWER</p>
+          <p>0 60 MPH</p>
+          <p>1/4 MILE</p>
+          <p>PRICE</p>
+        </div>
+        <div id="bottom-row">
+          <p>2140<span class="units">HP</span></p>
+          <p>3.5<span class="units">SEC</span></p>
+          <p>15<span class="units">SEC</span></p>
+          <p><span class="units">$</span>8.300</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
