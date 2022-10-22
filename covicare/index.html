@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covicare</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-color: rgb(1, 36, 77);
+    }
+
+    div {
+        border-radius: 7px;
+        background-color: rgb(255, 255, 233);
+        width: 328px;
+        border: 2px solid green;
+        padding: 30px;
+        margin: 90px;
+    }
+
+
+    .center {
+
+        top: 50%;
+        right: 50%;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Welcome to Covicare</h1>
+        <br><br>
+        <p style="text-align: center;">Get updates about the covid cases, and covid related deaths around the globe</p>
+        <br><br>
+
+        <h4 class="text-centre mt-2">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>New Confirmed Cases</th>
+                        <th>Total Confirmed Cases</th>
+                        <th>New Deaths</th>
+                        <th>Total Deaths</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="data">
+
+                    </tr>
+                </tbody>
+            </table>
+            <br></br>
+            <button onclick="refreshData()" class="btn btn-danger btn-outline-warning">
+                Refresh Data
+            </button>
+        </h4>
+    </div>
+    <br>
+    <div class="center">
+        <h3 class="text-center">
+            <h3 style="color: rgb(1, 36, 77);">
+                What preventative measures can I take against the coronavirus disease?
+            </h3>
+            <br><br>
+            <p>
+                1. Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.
+                <br><br>
+                2. Maintain at least 1 metre distance between you and people coughing or sneezing.
+                <br><br>
+                3. Avoid touching your face.
+                <br><br>
+                4. Cover your mouth and nose when coughing or sneezing.
+                <br><br>
+                5. Stay home if you feel unwell.
+                <br><br>
+                6. Refrain from smoking and other activities that weaken the lungs.
+                <br><br>
+                7. Practice physical distancing by avoiding unnecessary travel and staying away from large groups of
+                people.
+            </p>
+
+        </h3>
+    </div>
+    <div class="center">
+        <h3 style="color: rgb(1, 36, 77);">Do’s :</h3>
+        <p>
+            <br><br>
+            1. Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.
+            <br><br>
+            2. Maintain at least 1 metre distance between you and people coughing or sneezing.
+            <br><br>
+            3. Avoid touching your face.
+            <br><br>
+            4. Cover your mouth and nose when coughing or sneezing.
+            <br><br>
+            5. Stay home if you feel unwell.
+            <br><br>
+            6. Refrain from smoking and other activities that weaken the lungs.
+            <br><br>
+            7. Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.
+            <br><br>
+
+        </p>
+
+
+    </div>
+    <div class="center">
+        <h3 style="color: rgb(1, 36, 77);">Dont's :</h3>
+        <p>
+            <br><br>
+            1. Going to crowded places and cancel all non-essential travel plans.
+            <br><br>
+2. Touching your eyes, nose or mouth with unwashed hands.
+<br><br>
+3. Standing too close to other people when you are outside.
+<br><br>
+4. Eating undercooked or raw meat from any source.
+<br><br>
+5. Touching surfaces usually used by the public like railings, doors, gates, etc.
+<br><br>
+        </p>
+
+    </div>
+
+    </h3>
+    <h3 style ="text-align: center;">
+        <p style="color: beige;">
+            Have not vaccinated yet?
+            <br>
+            <a href="https://www.cowin.gov.in/">Click Here</a></li> to visit the official Cowin portal 
+        </p>
+
+    </h3>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+
+    init()
+
+
+
+    function init() {
+        var url = "https://api.covid19api.com/summary"
+
+        var data = ''
+
+        $.get(url, function (data) {
+            console.log(data.Global)
+
+            data = `
+
+                    <td>${data.Global.NewConfirmed}</td>
+                    <td>${data.Global.TotalConfirmed}</td>
+                    <td>${data.Global.NewDeaths}</td>
+                    <td>${data.Global.TotalDeaths}</td>
+                    `
+
+            $("#data").html(data)
+        })
+    }
+
+
+    function refreshData() {
+        clearData()
+        init()
+    }
+
+
+    function clearData() {
+        $("#data").empty()
+    }
+
+
+</script>
+
+</html>
