@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Python Tutorial</title>
+  <link rel="stylesheet" href="pf.css" />
+  <a href="https://youtu.be/rfscVS0vtbw">
+    <button>Reference(Eng)</button>
+    </a>
+  <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/">
+      <button>Practice</button>
+      </a>
+  <a href="https://youtu.be/vLqTf2b6GZw">
+        <button>Reference(hindi)</button>
+      </a>
+  <a href="https://www.freecodecamp.org/learn/machine-learning-with-python/">
+          <button>Machine Learning</button>
+      </a>
+  <a href="https://drive.google.com/file/d/1wwGj3biBnvORMgDM_n3Ivj6oox_NRalo/view?usp=sharing">
+        <button>About</button>
+      </a>
+
+</head>
+
+<body>
+  <div id="background"></div>
+
+  <div class="container" id="titleContainer">
+    <h1 id="title">Python Tutorial</h1>
+    <h6 id="author">by VIIT students</h6>
+  </div>
+
+  <div class="container">
+    <h2 class="heading">table of contents</h2>
+    <ul id="tableOfContents">
+      <li>print-statement</li>
+      <li>variables - integers and floats</li>
+      <li>Strings and numbers</li>
+      <li>comparing values</li>
+      <li>taking input</li>
+      <li>if-(else-)statement</li>
+      <li>Nested-if</li>
+      <li>Logical operators</li>
+      <li>while-loop</li>
+      <li>for-loop</li>
+      <li>lists</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2 class="heading">print-statement</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      print("hello world")<br>
+      print(5)<br>
+      print('5')<br>
+      print()<br>
+      print(3, 1, 4)<br>
+      print("1", end=" ")<br>
+      print("2", end="")<br>
+      print("3")<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      hello world<br>
+      5<br>
+      5<br>
+      <br>
+      3 1 4<br>
+      1 23<br>
+    </div>
+     
+    
+    <p class="description">
+      The print-statement accepts any number arguments inside the parentheses seperated by
+      commas.<span id="dots">....</span><span id="more">4 The arguments get printed to the console seperated by spaces and then at the end by default an line break is placed. <br>
+      To change the default value at the end, you introduce one argument with end="".
+      The print-statement can print numbers and Strings(multiple characters inside quotationmarks).
+      Forgeting the quotationmarks in the print-statment often leds to errors, unless there is a
+      variable with that name, then the current value of the variable is printed.</span>
+    </p>
+    <button onclick="read()" id="myBtn">Read More</button>
+    <script type="text/javascript">
+      var i=0;
+    function read() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+    </script> 
+  </div>
+
+
+  <div class="container">
+    <h2 class="heading">variables - integers and floats</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      num = 0<br>
+      print(num)<br>
+      num = num + 1<br>
+      print(num)<br>
+      num += 3<br>
+      print(num)<br>
+      num = 2 * num<br>
+      print(num)<br>
+      num //= 2<br>
+      print(num)<br>
+      num /= 2<br>
+      print(num)<br>
+      num -= 0.5<br>
+      print(num)<br>
+      num %= 1<br>
+      print(num)<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      0<br>
+      1<br>
+      4<br>
+      8<br>
+      4<br>
+      2.0<br>
+      1.5<br>
+      0.5<br>
+    </div>
+
+    <p class="description">
+      Variables can be defined by writing the name you what to give them followed by an equal-sign
+      followed by their value.<br>
+      <span id="dots">....</span><span id="more">Assining new values works exactly the same. When you want to add(+), subtract(-), multiply(*),
+      divide(/), whole-divide(//) or do modulo(%) on your variable, you can either write that your variable is equal
+      to an expression, which will be evaluated and then assigned to the variable or you can write
+      it shorter by writing the variable name followed by the operator followed by an expression.<br>
+      The modulo-operator returns the remainder of an division.
+      The 'normal' divison results in an floating point value, whereas whole-division results in
+      integer values (if the numbers were integer).</span>
+    </p>
+    <button onclick="read()" id="myBtn">Read More</button>
+    <script type="text/javascript">
+      var i=0;
+    function read() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+    </script> 
+    
+  </div>
+
+  <div class="container">
+    <h2 class="heading">Strings and numbers</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      print(123 + 321)<br>
+      print("123" + "321")<br>
+      print(12 * 3)<br>
+      print("12" * 3)<br>
+      print(int("12") + 3)<br>
+      print("number: " + str(5))<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      444<br>
+      123321<br>
+      36<br>
+      121212<br>
+      15<br>
+      number: 5<br>
+    </div>
+
+    <p class="description">
+      Strings are a chain of characters(Symbols). A String can be created with single or
+      double quotes.<br><span id="dots">....</span><span id="more">
+      The mathmatical operators work diffrently on Strings. Adding Strings results in a longer
+      String. Multiplying a String by a number makes the String repeat that many times.
+      Adding a String with a number results in an error.
+      To change a number to a String you can use str(). To do the reverse you can use int().</span>
+    </p>
+    <button onclick="read()" id="myBtn">Read More</button>
+    <script type="text/javascript">
+      var i=0;
+    function read() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+    </script> 
+  </div>
+
+  <div class="container">
+    <h2 class="heading">comparing values</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      num = 0<br>
+      print(num == 0)<br>
+      num = num + 1<br>
+      print(num == 0)<br>
+      print(num &gt;= 1)<br>
+      print(num &gt; 1)<br>
+      print(num != 1)<br>
+      print(int(input()) % 2 == 0)<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      True<br>
+      False<br>
+      True<br>
+      False<br>
+      False<br>
+      True<br>
+    </div>
+
+    <p class="description">
+      Using comparison operators you can test for equality (==), inequality (!=) or greater (&gt;) or
+      smaller (&lt;). The returned value<span id="dots">....</span><span id="more"> is a boolean value and can be either True or False.
+      The expressions on both sides of the comparison are evaluated first and then compared.</span>
+    </p>
+    <button onclick="read()" id="myBtn">Read More</button>
+    <script type="text/javascript">
+      var i=0;
+    function read() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+    </script> 
+  </div>
+
+  <div class="container">
+    <h2 class="heading">taking input</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      num = input("number: ")<br>
+      num = int(num)<br>
+      print(str(num) + " divisable by 2:")<br>
+      print(num % 2 == 0)<br>
+    </div>
+    <h3 class="heading">input</h3>
+    <div class="input">
+      3<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      number: <br>
+      3<br>
+      3 divisable by 2:<br>
+      False<br>
+    </div>
+    <h3 class="heading">input</h3>
+    <div class="input">
+      32<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      number: <br>
+      32<br>
+      32 divisable by 2:<br>
+      True<br>
+    </div>
+
+    <p class="description">
+      Using input() you can take an String as input. You can add an optional argument which
+      will tell other users of your program, what to input.<span id="dots">....</span><span id="more">
+      In the above code we take an input, then we convert it to an int value, so we can
+      use mathmatical and comparison operators on the input, to test wheter the input is
+      divisable by two or not.</span>
+    </p>
+    <button onclick="read()" id="myBtn">Read More</button>
+    <script type="text/javascript">
+      var i=0;
+    function read() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+    </script> 
+  </div>
+
+  <div class="container">
+    <h2 class="heading">if-(else-)statment</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      num = int(input("number: "))<br>
+      if num % 2 == 0:<br>
+      &emsp;print(str(num) + " is divisable by 2.")<br>
+      else:<br>
+      &emsp;print(str(num) + " is not divisable by 2.")<br>
+    </div>
+    <h3 class="heading">input</h3>
+    <div class="input">
+      3<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      number: <br>
+      3<br>
+      3 is not divisable by 2.<br>
+    </div>
+    <h3 class="heading">input</h3>
+    <div class="input">
+      32<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      number: <br>
+      32<br>
+      32 is divisable by 2.<br>
+    </div>
+
+    <p class="description">
+      An if-statement starts with the word 'if', followed by something which can be evaluated
+      to be True or False followed by a ':'.<span id="dots">....</span><span id="more"> They are used to execute diffrent code when certain conditions
+      are True. The code which should be executed if the condition was True has to be
+      directly after the ':' in the next line. This code has to be indeted with whitespaces
+      or a tab. If needed you can add an 'else:' afterwards with another indented block of
+      code. This code will be executed when the condition is False.<br>
+      In the code above it is used to make more understandable output.</span>
+    </p>
+    <button onclick="read()" id="myBtn">Read More</button>
+    <script type="text/javascript">
+      var i=0;
+    function read() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+    </script> 
+  </div>
+
+
+  <div class="container">
+    <h2 class="heading">Nested-if</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      x = int(input("x: "))<br>
+      print(x)<br>
+      y = int(input("y: "))<br>
+      print(y)<br>
+      if x &lt; 0:<br>
+      &emsp;if y &lt; 0:<br>
+      &emsp;&emsp;print("quadrant 3")<br>
+      &emsp;else:<br>
+      &emsp;&emsp;print("quadrant 2")<br>
+      else:<br>
+      &emsp;if y &lt; 0:<br>
+      &emsp;&emsp;print("quadrant 4")<br>
+      &emsp;else:<br>
+      &emsp;&emsp;print("quadrant 1")<br>
+    </div>
+    
+    <h3 class="heading">input</h3>
+    <div class="input">
+      4<br>
+      -3<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      x: <br>
+      4<br>
+      y: <br>
+      -3<br>
+      quadrant 4<br>
+    </div>
+
+    <h3 class="heading">input</h3>
+    <div class="input">
+      -1<br>
+      4<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      x: <br>
+      -1<br>
+      y: <br>
+      4<br>
+      quadrant 2<br>
+    </div>
+
+    <p class="description">
+      An if-statement can be inside another if-statement. This can be nested as much as you need<br>
+      In the code above it is used to determine in which categorie to put the coordinate.
+    </p>
+    
+  </div>
+
+
+  <div class="container">
+    <h2 class="heading">Logical operators</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      num = int(input("number: "))<br>
+      print(num)<br>
+      if num % 2 == 0 and num % 3 == 0:<br>
+      &emsp;print("divisable by 2 and 3.")<br>
+      else:<br>
+      &emsp;print("divisable by either 2 or 3 or neither.")<br>
+    </div>
+    
+    <h3 class="heading">input</h3>
+    <div class="input">
+      6<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      number: <br>
+      6<br>
+      divisable by 2 and 3.<br>
+    </div>
+
+    <h3 class="heading">input</h3>
+    <div class="input">
+      4<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      number: <br>
+      4<br>
+      divisable by either 2 or 3 or neither.<br>
+    </div>
+
+    <p class="description">
+      Boolean values can be connected using logical operators.<br>
+      "and" results in True if both values were True.<br>
+      "or" results in True if either of the two values were True.<br>
+      "not" inverts on value.
+    </p>
+    <button onclick="readMore(this)">Read More</button>
+  </div>
+
+
+  <div class="container">
+    <h2 class="heading">while-loop</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      num = int(input("number: "))<br>
+      print(num)<br>
+      print("primefactors:")<br>
+      i = 2<br>
+      while i &lt;= num:<br>
+      &emsp;if num % i == 0:<br>
+      &emsp;&emsp;print(i, end=" ")<br>
+      &emsp;&emsp;num /= i<br>
+      &emsp;else:<br>
+      &emsp;&emsp;i += 1<br>
+    </div>
+    
+    <h3 class="heading">input</h3>
+    <div class="input">
+      12<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      number: <br>
+      12<br>
+      primefactors:<br>
+      2 2 3<br>
+    </div>
+
+    <h3 class="heading">input</h3>
+    <div class="input">
+      7<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      number: <br>
+      7<br>
+      primefactors:<br>
+      7 <br>
+    </div>
+
+    <p class="description">
+      while-loops work exactly like if-statements, except instead of moving on to the code after it, the 
+      condition is tested again and the code run again if it was True. This can be repeated as 
+      many times as needed.<br><span id="dots">....</span><span id="more">
+      Be careful to not create infinite loops!<br>
+      In the code above we use a variable to count up to the user input. Everytime we find a divisor, 
+      we divide the input and print the factor. If there was no divisor we can move on counting up.
+      This way we get all primefactors and their occurance.</span>
+    </p>
+    <button onclick="readMore(this)">Read More</button>
+  </div>
+
+
+  <div class="container">
+    <h2 class="heading">for-loop</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      string = input("word: ")<br>
+      print(s)<br>
+      for char in string<br>
+      &emsp;print(char, end=" ")<br>
+    </div>
+    
+    <h3 class="heading">input</h3>
+    <div class="input">
+      Hello there!<br>
+    </div>
+    <h3 class="heading">output</h3>
+    <div class="output">
+      word: <br>
+      Hello there!<br>
+      H e l l o &ensp; t h e r e ! <br>
+    </div>
+
+    <p class="description">
+      for-loops are similar to while-loops, but they are specialised in counting or going throw something.<br>
+      A for-loop starts with the word for followed by a variable name followed by the word 
+      in and then something which can be iterated.
+      Iteratable things include strings, like in this example or lists and many more.
+    </p>
+    <button onclick="readMore(this)">Read More</button>
+  </div>
+
+
+  <div class="container">
+    <h2 class="heading">lists</h2>
+    <h3 class="heading">code</h3>
+    <div class="code">
+      l = [3, "1", 4]<br>
+      print(l)<br>
+      print()<br>
+      l.append(1)<br>
+      l.append("5")<br>
+      for element in l:<br>
+      &emsp;print(element)<br>
+    </div>
+    
+    <h3 class="heading">output</h3>
+    <div class="output">
+      [3, "1", 4]<br>
+      <br>
+      3<br>
+      1<br>
+      4<br>
+      1<br>
+      5<br>
+    </div>
+
+    <p class="description">
+      Lists store multiples values and can be changed.<br>
+      A list can be created using brackets. You can give some initial values, by writing them inside the brackets,
+      seperated by commas. <br>
+      To add something to the end of the list you can write the variable name followed by a dot followed 
+      by the function-name append(). Inside the parentheses you write what you want to add.<br>
+    </p>
+    <button onclick="readMore(this)">Read More</button>
+  </div>
+
+
+  <script src="pf.js"></script>
+</body>
+
+</html>
