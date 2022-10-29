@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrocamp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="basic_site_1.css">
+</head>
+<!--<style>
+    /*css reset*/
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("img/galaxyimg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /* height:850px;*/
+    }
+
+    .left {
+        display: inline-block;
+       /* border: 2px solid red;*/
+        position: absolute;
+        left: 34px;
+        top: 15px;
+
+    }
+
+    .left img {
+        width: 115px;
+    }
+
+    .left div {
+        line-height: 12px;
+        font-family: cursive;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .centre {
+        font-family: cursive;
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+       /* border: 2px solid green;*/
+
+    }
+
+    .right {
+        font-family: cursive;
+        display: inline-block;
+       /* border: 2px solid yellow;*/
+        position: absolute;
+        right: 34px;
+        top: 33px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 25px 15px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: aqua;
+    }
+
+    .btn {
+        font-family: cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 13px;
+        border: 2px solid grey;
+        border-radius: 11px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(109, 139, 148);
+    }
+
+    .container {
+        text-align: center;
+        font-family: cursive;
+        color: azure;
+        border: 3px solid white;
+        margin: 80px auto;
+        padding: 34px 56px;
+        width: 35%;
+        border-radius: 12px;
+    }
+
+    .form-group input {
+        /* text-align: center;*/
+        font-family: cursive;
+        display: block;
+        font-size: 17px;
+        margin: 10px auto;
+        padding: 3px;
+        border: 2px solid black;
+        border-radius: 12px;
+        width: 400px;
+        text-align: center;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 42px;
+        color: aqua;
+    }
+
+    .form-group_2 {
+        margin: auto;
+        padding: 4px;
+    }
+
+    .container button {
+        width: 400px;
+    }
+</style>--->
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/Astronomyimg_2.png" alt="" srcset="">
+    
+            <div>
+                Astro club
+            </div>
+        </div>
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Astro centre</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Us Now!!!</h1>
+        <form action="swastik_action.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Mobile Number">
+            </div>
+            <div class="form-group">
+                <input type="date" name="" placeholder="Enter your Date of Birth ">
+            </div>
+            <div class="form-group_2">
+                Male<input type="radio" name="mygender" id=""> Female<input type="radio" name="mygender"> Others<input type="radio" name="mygender" id="">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+
+</html>
