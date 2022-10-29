@@ -1,0 +1,131 @@
+/*<style>*/
+    /*css reset*/
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("img/galaxyimg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /* height:850px;*/
+    }
+
+    .left {
+        color: rgb(230, 155, 127);
+        display: inline-block;
+       /* border: 2px solid red;*/
+        position: absolute;
+        left: 34px;
+        top: 18px;
+
+    }
+
+    .left img {
+        width: 115px;
+        border-bottom: 4px;
+
+    }
+
+    .left div {
+        line-height: 12px;
+        font-family: cursive;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 3px;
+        width: auto;
+    }
+
+    .centre {
+        font-family: cursive;
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+       /* border: 2px solid grey;*/
+        border-radius: 11px;
+
+    }
+
+    .right {
+        font-family: cursive;
+        display: inline-block;
+       /* border: 2px solid yellow;*/
+        position: absolute;
+        right: 34px;
+        top: 33px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 25px 15px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: aqua;
+    }
+
+    .btn {
+        font-family: cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 13px;
+        border: 2px solid grey;
+        border-radius: 11px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(109, 139, 148);
+    }
+
+    .container {
+        text-align: center;
+        font-family: cursive;
+        color: azure;
+        border: 3px solid grey;
+        margin: 80px auto;
+        padding: 34px 56px;
+        width: 35%;
+        border-radius: 12px;
+    }
+
+    .form-group input {
+        /* text-align: center;*/
+        font-family: cursive;
+        display: block;
+        font-size: 17px;
+        margin: 10px auto;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 12px;
+        width: 400px;
+        text-align: center;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        color: aqua;
+        text-shadow: 3px 3px 3px rgb(105, 105, 203);
+    }
+
+    .form-group_2 {
+        margin: auto;
+        padding: 4px;
+    }
+
+    .container button {
+        width: 400px;
+        padding-top: 3px;
+        margin-bottom: auto;
+    }
+/*</style>*/
